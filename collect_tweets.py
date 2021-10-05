@@ -139,7 +139,7 @@ def main():
     #Set rules for the filtered stream
     set_rules()
     
-    #Get the tweets and post it in the Database
+    #Get the tweets and post them in the Database
     get_stream()
     
 if __name__ == "__main__":
