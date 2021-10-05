@@ -18,7 +18,7 @@ import pyodbc
 import datetime
 
 #Bearer token from your twitter API project:
-bearer_token = "AAAAAAAAAAAAAAAAAAAAAHBbUQEAAAAAT0wzyy3du53DzyKp5LON%2Bkdl4I0%3DT9ySsnZH7wOXMcjw7fekqQFkyvcTr1cJBgDtbUKJexjkG8laOQ"
+bearer_token = "<add_your_bearer_token>"
 
 def bearer_oauth(r):
     """
@@ -112,8 +112,8 @@ def get_stream():
          
 
 def connect_sql():
-    server = 'DESKTOP-C6B6BST\SQLEXPRESS2019'
-    db = 'Hilab_test'
+    server = '<your_server_name>'
+    db = '<your_DB_Name>'
     
     connection = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
                       'Server=' + server + ';'
