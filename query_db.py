@@ -11,8 +11,8 @@ import pyodbc
 import pandas as pd
 
 def connect_sql():
-    server = 'DESKTOP-C6B6BST\SQLEXPRESS2019'
-    db = 'Hilab_test'
+    server = '<your_server>'
+    db = '<your_db>'
     
     connection = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
                       'Server=' + server + ';'
@@ -29,6 +29,7 @@ def query_sql(conn,query):
     print(df)
     
 def main():
+    #Set your queries
     q1 = """
             SELECT COUNT(ts.ID) as 'Tweets', ts.Tag 
             FROM twitter_stream as ts 
