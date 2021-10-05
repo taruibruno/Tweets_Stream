@@ -20,6 +20,13 @@ This project aims to collect real time tweets about COVID, Health and Vaccine su
     - **Note:** You can also use a database that already exists in a dedicated server or cloud service. You just need to make sure that you have the access to post data into the database. The table you use can also be different, as long as it has at least the following columns: ID, Tag and CreatedOn.
 4. Python 3.0 or later.
 
+## How to use it
+In order to use the scripts you first need to edit them adding your own bearer token and database information.
+1. Open the python script in a python editor, I used [spyder](https://www.spyder-ide.org/) but you can use the IDE you prefer.
+2. Add the information about your token and database where is indicated in the scripts.
+3. Run the collet_tweets.py script. It will start populate your database with live tweets matching your rules. Once you get enough entries in your database, you can manually stop the script pressing ctrl+C in the terminal where it is running.
+4. Then you can create your queries in the query_db.py and run the script to get the results.
+
 ## Analyzing the data
 Once the data has been posted in your database, you can run queries to analyze the results. The examples of queries below are considering the table proposed on Step 3 in the **Requirements** section.
 * Count the total number of tweets for each rule applied:
